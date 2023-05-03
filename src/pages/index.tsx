@@ -1,9 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
-
 import { api } from "~/utils/api";
-import Login from "./login/login.component";
+import Dashboard from "./dashboard";
 
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -11,11 +9,11 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Food</title>
+        <title>Vkusotiiki</title>
         <meta name="description" content="Recipes app from Tsvetomir Tsekov" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <Login />
+      <Dashboard />
     </>
   );
 };
