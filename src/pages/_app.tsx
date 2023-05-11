@@ -3,7 +3,7 @@ import { ClerkProvider, SignIn, SignedIn, SignedOut } from "@clerk/nextjs";
 import { api } from "~/utils/api";
 
 import "~/styles/globals.css";
-import Login from "./login/login";
+import Login from "../components/login/login";
 
 const MyApp: AppType = ({ Component, pageProps }: AppProps) => {
   return (

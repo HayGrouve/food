@@ -1,6 +1,8 @@
-import { UserButton } from "@clerk/nextjs";
 import { type NextPage } from "next";
 import Head from "next/head";
+import Navbar from "../../components/navbar/navbar";
+import Footer from "../../components/footer/footer";
+import styles from "./dashboard.module.css";
 
 const Dashboard: NextPage = ({}) => {
   return (
@@ -8,8 +10,11 @@ const Dashboard: NextPage = ({}) => {
       <Head>
         <title>Dashboard</title>
       </Head>
-      <UserButton />
-      <h1>Dashboard</h1>
+      <div className={styles.wrapper}>
+        <Navbar />
+        <div>content</div>
+        <Footer />
+      </div>
     </>
   );
 };

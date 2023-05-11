@@ -9,7 +9,7 @@ export default function Login() {
           <SignIn
             appearance={{
               variables: {
-                colorPrimary: "#607d8b",
+                colorPrimary: "#1F2937",
               },
             }}
           />
