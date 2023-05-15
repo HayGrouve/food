@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
 import styles from "./dashboard.module.css";
+import Recipes from "../../components/recipes/recipes";
 
 const Dashboard: NextPage = ({}) => {
   return (
@@ -12,7 +13,7 @@ const Dashboard: NextPage = ({}) => {
       </Head>
       <div className={styles.wrapper}>
         <Navbar />
-        <div>content</div>
+        <Recipes />
         <Footer />
       </div>
     </>
